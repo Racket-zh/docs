@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="157" height="87" viewBox="0 0 157 87" version="1.1">
+<g id="surface1658">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,100%);fill-opacity:1;" d="M 103 28 C 103 41.808594 80.613281 53 53 53 C 25.386719 53 3 41.808594 3 28 C 3 14.191406 25.386719 3 53 3 C 80.613281 3 103 14.191406 103 28 Z M 103 28 "/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,0%,0%);fill-opacity:1;" d="M 153 58 C 153 71.808594 130.613281 83 103 83 C 75.386719 83 53 71.808594 53 58 C 53 44.191406 75.386719 33 103 33 C 130.613281 33 153 44.191406 153 58 Z M 153 58 "/>
+<path style="fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:0.5;stroke-miterlimit:10;" d="M 78.5 3.5 L 78.5 83.5 "/>
+<path style="fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(100%,100%,100%);stroke-opacity:0.5;stroke-miterlimit:10;" d="M 3.5 43.5 L 153.5 43.5 "/>
+<path style="fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:0.5;stroke-miterlimit:10;" d="M 77.5 3.5 L 77.5 83.5 "/>
+<path style="fill:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:0.5;stroke-miterlimit:10;" d="M 3.5 42.5 L 153.5 42.5 "/>
+</g>
+</svg>

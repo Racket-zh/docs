@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127" height="127" viewBox="0 0 127 127" version="1.1">
+<defs>
+<clipPath id="clip1">
+  <path d="M 103 103 L 123 103 L 123 123 L 103 123 Z M 103 103 "/>
+</clipPath>
+<clipPath id="clip2">
+  <path d="M 83 103 L 103 103 L 103 123 L 83 123 Z M 83 103 "/>
+</clipPath>
+<clipPath id="clip3">
+  <path d="M 63 103 L 83 103 L 83 123 L 63 123 Z M 63 103 "/>
+</clipPath>
+<clipPath id="clip4">
+  <path d="M 43 103 L 63 103 L 63 123 L 43 123 Z M 43 103 "/>
+</clipPath>
+<clipPath id="clip5">
+  <path d="M 23 103 L 43 103 L 43 123 L 23 123 Z M 23 103 "/>
+</clipPath>
+<clipPath id="clip6">
+  <path d="M 3 103 L 23 103 L 23 123 L 3 123 Z M 3 103 "/>
+</clipPath>
+<clipPath id="clip7">
+  <path d="M 103 83 L 123 83 L 123 103 L 103 103 Z M 103 83 "/>
+</clipPath>
+<clipPath id="clip8">
+  <path d="M 83 83 L 103 83 L 103 103 L 83 103 Z M 83 83 "/>
+</clipPath>
+<clipPath id="clip9">
+  <path d="M 63 83 L 83 83 L 83 103 L 63 103 Z M 63 83 "/>
+</clipPath>
+<clipPath id="clip10">
+  <path d="M 43 83 L 63 83 L 63 103 L 43 103 Z M 43 83 "/>
+</clipPath>
+<clipPath id="clip11">
+  <path d="M 23 83 L 43 83 L 43 103 L 23 103 Z M 23 83 "/>
+</clipPath>
+<clipPath id="clip12">
+  <path d="M 3 83 L 23 83 L 23 103 L 3 103 Z M 3 83 "/>
+</clipPath>
+<clipPath id="clip13">
+  <path d="M 103 63 L 123 63 L 123 83 L 103 83 Z M 103 63 "/>
+</clipPath>
+<clipPath id="clip14">
+  <path d="M 83 63 L 103 63 L 103 83 L 83 83 Z M 83 63 "/>
+</clipPath>
+<clipPath id="clip15">
+  <path d="M 63 63 L 83 63 L 83 83 L 63 83 Z M 63 63 "/>
+</clipPath>
+<clipPath id="clip16">
+  <path d="M 43 63 L 63 63 L 63 83 L 43 83 Z M 43 63 "/>
+</clipPath>
+<clipPath id="clip17">
+  <path d="M 23 63 L 43 63 L 43 83 L 23 83 Z M 23 63 "/>
+</clipPath>
+<clipPath id="clip18">
+  <path d="M 3 63 L 23 63 L 23 83 L 3 83 Z M 3 63 "/>
+</clipPath>
+<clipPath id="clip19">
+  <path d="M 103 43 L 123 43 L 123 63 L 103 63 Z M 103 43 "/>
+</clipPath>
+<clipPath id="clip20">
+  <path d="M 83 43 L 103 43 L 103 63 L 83 63 Z M 83 43 "/>
+</clipPath>
+<clipPath id="clip21">
+  <path d="M 63 43 L 83 43 L 83 63 L 63 63 Z M 63 43 "/>
+</clipPath>
+<clipPath id="clip22">
+  <path d="M 43 43 L 63 43 L 63 63 L 43 63 Z M 43 43 "/>
+</clipPath>
+<clipPath id="clip23">
+  <path d="M 23 43 L 43 43 L 43 63 L 23 63 Z M 23 43 "/>
+</clipPath>
+<clipPath id="clip24">
+  <path d="M 3 43 L 23 43 L 23 63 L 3 63 Z M 3 43 "/>
+</clipPath>
+<clipPath id="clip25">
+  <path d="M 103 23 L 123 23 L 123 43 L 103 43 Z M 103 23 "/>
+</clipPath>
+<clipPath id="clip26">
+  <path d="M 83 23 L 103 23 L 103 43 L 83 43 Z M 83 23 "/>
+</clipPath>
+<clipPath id="clip27">
+  <path d="M 63 23 L 83 23 L 83 43 L 63 43 Z M 63 23 "/>
+</clipPath>
+<clipPath id="clip28">
+  <path d="M 43 23 L 63 23 L 63 43 L 43 43 Z M 43 23 "/>
+</clipPath>
+<clipPath id="clip29">
+  <path d="M 23 23 L 43 23 L 43 43 L 23 43 Z M 23 23 "/>
+</clipPath>
+<clipPath id="clip30">
+  <path d="M 3 23 L 23 23 L 23 43 L 3 43 Z M 3 23 "/>
+</clipPath>
+<clipPath id="clip31">
+  <path d="M 103 3 L 123 3 L 123 23 L 103 23 Z M 103 3 "/>
+</clipPath>
+<clipPath id="clip32">
+  <path d="M 83 3 L 103 3 L 103 23 L 83 23 Z M 83 3 "/>
+</clipPath>
+<clipPath id="clip33">
+  <path d="M 63 3 L 83 3 L 83 23 L 63 23 Z M 63 3 "/>
+</clipPath>
+<clipPath id="clip34">
+  <path d="M 43 3 L 63 3 L 63 23 L 43 23 Z M 43 3 "/>
+</clipPath>
+<clipPath id="clip35">
+  <path d="M 23 3 L 43 3 L 43 23 L 23 23 Z M 23 3 "/>
+</clipPath>
+<clipPath id="clip36">
+  <path d="M 3 3 L 23 3 L 23 23 L 3 23 Z M 3 3 "/>
+</clipPath>
+</defs>
+<g id="surface649">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 103 103 C 103 103 123 103 123 103 C 123 103 123 123 123 123 C 123 123 103 123 103 123 C 103 123 103 103 103 103 Z M 103 103 "/>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 83 103 C 83 103 103 103 103 103 C 103 103 103 123 103 123 C 103 123 83 123 83 123 C 83 123 83 103 83 103 Z M 83 103 "/>
+</g>
+<g clip-path="url(#clip3)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 63 103 C 63 103 83 103 83 103 C 83 103 83 123 83 123 C 83 123 63 123 63 123 C 63 123 63 103 63 103 Z M 63 103 "/>
+</g>
+<g clip-path="url(#clip4)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 43 103 C 43 103 63 103 63 103 C 63 103 63 123 63 123 C 63 123 43 123 43 123 C 43 123 43 103 43 103 Z M 43 103 "/>
+</g>
+<g clip-path="url(#clip5)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 23 103 C 23 103 43 103 43 103 C 43 103 43 123 43 123 C 43 123 23 123 23 123 C 23 123 23 103 23 103 Z M 23 103 "/>
+</g>
+<g clip-path="url(#clip6)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 3 103 C 3 103 23 103 23 103 C 23 103 23 123 23 123 C 23 123 3 123 3 123 C 3 123 3 103 3 103 Z M 3 103 "/>
+</g>
+<g clip-path="url(#clip7)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 103 83 C 103 83 123 83 123 83 C 123 83 123 103 123 103 C 123 103 103 103 103 103 C 103 103 103 83 103 83 Z M 103 83 "/>
+</g>
+<g clip-path="url(#clip8)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 83 83 C 83 83 103 83 103 83 C 103 83 103 103 103 103 C 103 103 83 103 83 103 C 83 103 83 83 83 83 Z M 83 83 "/>
+</g>
+<g clip-path="url(#clip9)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 63 83 C 63 83 83 83 83 83 C 83 83 83 103 83 103 C 83 103 63 103 63 103 C 63 103 63 83 63 83 Z M 63 83 "/>
+</g>
+<g clip-path="url(#clip10)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 43 83 C 43 83 63 83 63 83 C 63 83 63 103 63 103 C 63 103 43 103 43 103 C 43 103 43 83 43 83 Z M 43 83 "/>
+</g>
+<g clip-path="url(#clip11)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 23 83 C 23 83 43 83 43 83 C 43 83 43 103 43 103 C 43 103 23 103 23 103 C 23 103 23 83 23 83 Z M 23 83 "/>
+</g>
+<g clip-path="url(#clip12)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 3 83 C 3 83 23 83 23 83 C 23 83 23 103 23 103 C 23 103 3 103 3 103 C 3 103 3 83 3 83 Z M 3 83 "/>
+</g>
+<g clip-path="url(#clip13)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 103 63 C 103 63 123 63 123 63 C 123 63 123 83 123 83 C 123 83 103 83 103 83 C 103 83 103 63 103 63 Z M 103 63 "/>
+</g>
+<g clip-path="url(#clip14)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 83 63 C 83 63 103 63 103 63 C 103 63 103 83 103 83 C 103 83 83 83 83 83 C 83 83 83 63 83 63 Z M 83 63 "/>
+</g>
+<g clip-path="url(#clip15)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 63 63 C 63 63 83 63 83 63 C 83 63 83 83 83 83 C 83 83 63 83 63 83 C 63 83 63 63 63 63 Z M 63 63 "/>
+</g>
+<g clip-path="url(#clip16)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 43 63 C 43 63 63 63 63 63 C 63 63 63 83 63 83 C 63 83 43 83 43 83 C 43 83 43 63 43 63 Z M 43 63 "/>
+</g>
+<g clip-path="url(#clip17)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 23 63 C 23 63 43 63 43 63 C 43 63 43 83 43 83 C 43 83 23 83 23 83 C 23 83 23 63 23 63 Z M 23 63 "/>
+</g>
+<g clip-path="url(#clip18)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 3 63 C 3 63 23 63 23 63 C 23 63 23 83 23 83 C 23 83 3 83 3 83 C 3 83 3 63 3 63 Z M 3 63 "/>
+</g>
+<g clip-path="url(#clip19)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 103 43 C 103 43 123 43 123 43 C 123 43 123 63 123 63 C 123 63 103 63 103 63 C 103 63 103 43 103 43 Z M 103 43 "/>
+</g>
+<g clip-path="url(#clip20)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 83 43 C 83 43 103 43 103 43 C 103 43 103 63 103 63 C 103 63 83 63 83 63 C 83 63 83 43 83 43 Z M 83 43 "/>
+</g>
+<g clip-path="url(#clip21)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 63 43 C 63 43 83 43 83 43 C 83 43 83 63 83 63 C 83 63 63 63 63 63 C 63 63 63 43 63 43 Z M 63 43 "/>
+</g>
+<g clip-path="url(#clip22)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 43 43 C 43 43 63 43 63 43 C 63 43 63 63 63 63 C 63 63 43 63 43 63 C 43 63 43 43 43 43 Z M 43 43 "/>
+</g>
+<g clip-path="url(#clip23)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 23 43 C 23 43 43 43 43 43 C 43 43 43 63 43 63 C 43 63 23 63 23 63 C 23 63 23 43 23 43 Z M 23 43 "/>
+</g>
+<g clip-path="url(#clip24)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 3 43 C 3 43 23 43 23 43 C 23 43 23 63 23 63 C 23 63 3 63 3 63 C 3 63 3 43 3 43 Z M 3 43 "/>
+</g>
+<g clip-path="url(#clip25)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 103 23 C 103 23 123 23 123 23 C 123 23 123 43 123 43 C 123 43 103 43 103 43 C 103 43 103 23 103 23 Z M 103 23 "/>
+</g>
+<g clip-path="url(#clip26)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 83 23 C 83 23 103 23 103 23 C 103 23 103 43 103 43 C 103 43 83 43 83 43 C 83 43 83 23 83 23 Z M 83 23 "/>
+</g>
+<g clip-path="url(#clip27)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 63 23 C 63 23 83 23 83 23 C 83 23 83 43 83 43 C 83 43 63 43 63 43 C 63 43 63 23 63 23 Z M 63 23 "/>
+</g>
+<g clip-path="url(#clip28)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 43 23 C 43 23 63 23 63 23 C 63 23 63 43 63 43 C 63 43 43 43 43 43 C 43 43 43 23 43 23 Z M 43 23 "/>
+</g>
+<g clip-path="url(#clip29)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 23 23 C 23 23 43 23 43 23 C 43 23 43 43 43 43 C 43 43 23 43 23 43 C 23 43 23 23 23 23 Z M 23 23 "/>
+</g>
+<g clip-path="url(#clip30)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 3 23 C 3 23 23 23 23 23 C 23 23 23 43 23 43 C 23 43 3 43 3 43 C 3 43 3 23 3 23 Z M 3 23 "/>
+</g>
+<g clip-path="url(#clip31)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 103 3 C 103 3 123 3 123 3 C 123 3 123 23 123 23 C 123 23 103 23 103 23 C 103 23 103 3 103 3 Z M 103 3 "/>
+</g>
+<g clip-path="url(#clip32)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 83 3 C 83 3 103 3 103 3 C 103 3 103 23 103 23 C 103 23 83 23 83 23 C 83 23 83 3 83 3 Z M 83 3 "/>
+</g>
+<g clip-path="url(#clip33)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 63 3 C 63 3 83 3 83 3 C 83 3 83 23 83 23 C 83 23 63 23 63 23 C 63 23 63 3 63 3 Z M 63 3 "/>
+</g>
+<g clip-path="url(#clip34)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 43 3 C 43 3 63 3 63 3 C 63 3 63 23 63 23 C 63 23 43 23 43 23 C 43 23 43 3 43 3 Z M 43 3 "/>
+</g>
+<g clip-path="url(#clip35)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 23 3 C 23 3 43 3 43 3 C 43 3 43 23 43 23 C 43 23 23 23 23 23 C 23 23 23 3 23 3 Z M 23 3 "/>
+</g>
+<g clip-path="url(#clip36)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 3 3 C 3 3 23 3 23 3 C 23 3 23 23 23 23 C 23 23 3 23 3 23 C 3 23 3 3 3 3 Z M 3 3 "/>
+</g>
+</g>
+</svg>

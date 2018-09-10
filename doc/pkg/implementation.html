@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>12&nbsp;How Package Installation and Distribution Works</title><link rel="stylesheet" type="text/css" href="../scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="../racket.css" title="default"/><link rel="stylesheet" type="text/css" href="../manual-style.css" title="default"/><link rel="stylesheet" type="text/css" href="../manual-racket.css" title="default"/><link rel="stylesheet" type="text/css" href="../manual-racket.css" title="default"/><link rel="stylesheet" type="text/css" href="../doc-site.css" title="default"/><script type="text/javascript" src="../scribble-common.js"></script><script type="text/javascript" src="../manual-racket.js"></script><script type="text/javascript" src="../manual-racket.js"></script><script type="text/javascript" src="../doc-site.js"></script><script type="text/javascript" src="../local-redirect/local-redirect.js"></script><script type="text/javascript" src="../local-redirect/local-user-redirect.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="doc-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_0&quot;);">&#9660;</a></td><td></td><td><a href="index.html" class="tocviewlink" data-pltdoc="x">Package Management in Racket</a></td></tr></table></div><div class="tocviewsublisttop" style="display: block;" id="tocview_0"><table cellspacing="0" cellpadding="0"><tr><td align="right">1&nbsp;</td><td><a href="getting-started.html" class="tocviewlink" data-pltdoc="x">Getting Started with Packages</a></td></tr><tr><td align="right">2&nbsp;</td><td><a href="Package_Concepts.html" class="tocviewlink" data-pltdoc="x">Package Concepts</a></td></tr><tr><td align="right">3&nbsp;</td><td><a href="cmdline.html" class="tocviewlink" data-pltdoc="x">Using <span class="stt">raco pkg</span></a></td></tr><tr><td align="right">4&nbsp;</td><td><a href="metadata.html" class="tocviewlink" data-pltdoc="x">Package Metadata</a></td></tr><tr><td align="right">5&nbsp;</td><td><a href="strip.html" class="tocviewlink" data-pltdoc="x">Source, Binary, and Built Packages</a></td></tr><tr><td align="right">6&nbsp;</td><td><a href="git-workflow.html" class="tocviewlink" data-pltdoc="x">Developing Packages with Git</a></td></tr><tr><td align="right">7&nbsp;</td><td><a href="apis.html" class="tocviewlink" data-pltdoc="x">Package APIs</a></td></tr><tr><td align="right">8&nbsp;</td><td><a href="catalog-protocol.html" class="tocviewlink" data-pltdoc="x">Package Catalog Protocol</a></td></tr><tr><td align="right">9&nbsp;</td><td><a href="PLaneT_Compatibility.html" class="tocviewlink" data-pltdoc="x"><span class="planetName">PLane<span class="mywbr"> &nbsp;</span>T</span> Compatibility</a></td></tr><tr><td align="right">10&nbsp;</td><td><a href="FAQ.html" class="tocviewlink" data-pltdoc="x">FAQ</a></td></tr><tr><td align="right">11&nbsp;</td><td><a href="Future_Plans.html" class="tocviewlink" data-pltdoc="x">Future Plans</a></td></tr><tr><td align="right">12&nbsp;</td><td><a href="" class="tocviewselflink" data-pltdoc="x">How Package Installation and Distribution Works</a></td></tr></table></div></div><div class="tocviewlist"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;"><a href="javascript:void(0);" title="Expand/Collapse" class="tocviewtoggle" onclick="TocviewToggle(this,&quot;tocview_1&quot;);">&#9658;</a></td><td>12&nbsp;</td><td><a href="" class="tocviewselflink" data-pltdoc="x">How Package Installation and Distribution Works</a></td></tr></table><div class="tocviewsublistbottom" style="display: none;" id="tocview_1"><table cellspacing="0" cellpadding="0"><tr><td align="right">12.1&nbsp;</td><td><a href="#%28part._.Relative_.References%29" class="tocviewlink" data-pltdoc="x">Relative References</a></td></tr><tr><td align="right">12.2&nbsp;</td><td><a href="#%28part._.Separate_.Documentation_.Rendering%29" class="tocviewlink" data-pltdoc="x">Separate Documentation Rendering</a></td></tr><tr><td align="right">12.3&nbsp;</td><td><a href="#%28part._.Cross-.Document_.H.T.M.L_.References%29" class="tocviewlink" data-pltdoc="x">Cross-<wbr></wbr>Document HTML References</a></td></tr><tr><td align="right">12.4&nbsp;</td><td><a href="#%28part._.H.T.M.L_.Documentation_.Searching_and_.Start_.Page%29" class="tocviewlink" data-pltdoc="x">HTML Documentation Searching and Start Page</a></td></tr></table></div></div></div><div class="tocsub"><div class="tocsubtitle">在本页中：</div><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber">12.1<tt>&nbsp;</tt></span><a href="#%28part._.Relative_.References%29" class="tocsubseclink" data-pltdoc="x">Relative References</a></td></tr><tr><td><span class="tocsublinknumber">12.2<tt>&nbsp;</tt></span><a href="#%28part._.Separate_.Documentation_.Rendering%29" class="tocsubseclink" data-pltdoc="x">Separate Documentation Rendering</a></td></tr><tr><td><span class="tocsublinknumber">12.3<tt>&nbsp;</tt></span><a href="#%28part._.Cross-.Document_.H.T.M.L_.References%29" class="tocsubseclink" data-pltdoc="x">Cross-<wbr></wbr>Document HTML References</a></td></tr><tr><td><span class="tocsublinknumber">12.4<tt>&nbsp;</tt></span><a href="#%28part._.H.T.M.L_.Documentation_.Searching_and_.Start_.Page%29" class="tocsubseclink" data-pltdoc="x">HTML Documentation Searching and Start Page</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><div class="versionbox"><span class="version">7.0.0.18</span></div><div class="navsettop"><span class="navleft"><form class="searchform"><input class="searchbox" style="color: #888;" type="text" value="…搜索手册…" title="输入搜索字符串以搜索手册" onkeypress="return DoSearchKey(event, this, &quot;7.0.0.18&quot;, &quot;../&quot;);" onfocus="this.style.color=&quot;black&quot;; this.style.textAlign=&quot;left&quot;; if (this.value == &quot;…搜索手册…&quot;) this.value=&quot;&quot;;" onblur="if (this.value.match(/^ *$/)) { this.style.color=&quot;#888&quot;; this.style.textAlign=&quot;center&quot;; this.value=&quot;…搜索手册…&quot;; }"/></form>&nbsp;&nbsp;<a href="../index.html" title="上至文档的顶层" data-pltdoc="x" onclick="return GotoPLTRoot(&quot;7.0.0.18&quot;);">&#39030;&#23618;</a></span><span class="navright">&nbsp;&nbsp;<a href="Future_Plans.html" title="后退至&quot;11 Future Plans&quot;" data-pltdoc="x">&larr; &#21069;&#19968;&#39029;</a>&nbsp;&nbsp;<a href="index.html" title="上至&quot;Package Management in Racket&quot;" data-pltdoc="x">&#19978;&#19968;&#23618;</a>&nbsp;&nbsp;<span class="nonavigation">&#21518;&#19968;&#39029; &rarr;</span></span>&nbsp;</div><h3 x-source-module="(lib &quot;pkg/scribblings/pkg.scrbl&quot;)" x-source-pkg="racket-doc" x-part-tag="&quot;implementation&quot;">12<tt>&nbsp;</tt><a name="(part._implementation)"></a>How Package Installation and Distribution Works</h3><p>The package manager builds on three main pieces of infrastructure:</p><ul><li><p><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=collects.html%23%2528tech._collection._links._file%2529&amp;version=7.0.0.18" class="techoutside Sq" data-pltdoc="x"><span class="techinside">Collection links files</span></a> as supported by the
+Racket runtime system.</p><p>Installation of a package installs collection links, so the
+package&rsquo;s collections can be found to compile and load modules
+that use the package&rsquo;s modules.</p><p>If you use <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=link.html&amp;version=7.0.0.18" class="Sq" data-pltdoc="x"><span class="stt">raco link -l</span></a>
+to view installed links, you will see links that were put in
+place by the package system. Obviously, you should not directly
+modify those links.</p></li><li><p>The <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=setup.html&amp;version=7.0.0.18" class="Sq" data-pltdoc="x"><span class="stt">raco setup</span></a> tool for
+building installed collections, including their documentation.</p><p>The <span class="stt">raco setup</span> tool drives <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=make.html&amp;version=7.0.0.18" class="Sq" data-pltdoc="x"><span class="stt">raco make</span></a> to compile Racket sources to
+bytecode form. Recompilation is determined by changes to file
+timestamps, SHA-1 hashes, and dependencies recorded in
+<span class="stt">"dep"</span> files.</p><p>Since package installations are reflected as collection links,
+<span class="stt">raco setup</span> operations on collections implicitly handle
+packages.  The <span class="stt">raco setup</span> tool is &ldquo;aware&rdquo; of packages
+to only a limited extent: it uses functions like
+<span class="RktSym">path-&gt;pkg</span> to print progress information in terms of
+packages, and it uses similar package-inspection functions to
+connect modules to package and check actual dependencies
+against declared package dependencies.</p></li><li><p>The <span class="stt">racket-index</span> package, which extends <span class="stt">raco
+setup</span> to drive <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=index.html&amp;version=7.0.0.18" class="Sq" data-pltdoc="x">Scribble</a> for
+collection-based documentation.</p><p>The <span class="stt">racket-index</span> package implements the
+documentation-rendering analogue of <span class="stt">raco make</span>, detecting
+changes in documentation declarations and re-rendering
+documents as needed to pick up cross-reference changes. The
+<span class="stt">racket-index</span> package also implements special
+documents for the entry point to HTML-rendered documentation
+(i.e., the listing of all installed documentation), the HTML
+search page, the local-redirection page (which server-search
+links to locally installed files), and so on.</p></li></ul><p>Each of the three levels accommodate the <span class="stt">user</span> and
+<span class="stt">installation</span> <a href="Package_Concepts.html#%28tech._package._scope%29" class="techoutside" data-pltdoc="x"><span class="techinside">package scopes</span></a>, where the details in each
+case often differ between the scopes. Generally, references in the
+<span class="stt">installation</span> scope must be implemented as relative, so that an
+in-place installing of Racket can be moved to a different
+location. References in the <span class="stt">user</span> scope, meanwhile, may refer
+directly to the installation at some level; most references are
+collection-relative or installation-relative, so package content
+can be built in <span class="stt">user</span> scope and then assembled into a <a href="strip.html#%28tech._built._package%29" class="techoutside" data-pltdoc="x"><span class="techinside">built
+package</span></a> or <a href="strip.html#%28tech._binary._package%29" class="techoutside" data-pltdoc="x"><span class="techinside">binary package</span></a> for installation elsewhere.</p><h4 x-source-module="(lib &quot;pkg/scribblings/pkg.scrbl&quot;)" x-source-pkg="racket-doc" x-part-tag="&quot;Relative_References&quot;">12.1<tt>&nbsp;</tt><a name="(part._.Relative_.References)"></a>Relative References</h4><p>Functions like <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=relative-paths.html%23%2528def._%2528%2528lib._setup%252Fcollects..rkt%2529._path-%7E3ecollects-relative%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">path-&gt;collects-relative</a></span> and
+<span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=relative-paths.html%23%2528def._%2528%2528lib._setup%252Fmain-collects..rkt%2529._path-%7E3emain-collects-relative%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">path-&gt;main-collects-relative</a></span> are used to serialize paths into
+relative form, and then the paths can be deserialized with functions
+like <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=relative-paths.html%23%2528def._%2528%2528lib._setup%252Fcollects..rkt%2529._collects-relative-%7E3epath%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">collects-relative-&gt;path</a></span> and
+<span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=relative-paths.html%23%2528def._%2528%2528lib._setup%252Fmain-collects..rkt%2529._main-collects-relative-%7E3epath%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">main-collects-relative-&gt;path</a></span>. The
+<span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=relative-paths.html%23%2528def._%2528%2528lib._setup%252Fpath-to-relative..rkt%2529._make-path-%7E3erelative-string%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">make-path-&gt;relative-string</a></span> function generalizes support for
+such serialization and deserialization relative to a given set of
+directories.</p><p>Dependencies in a <span class="stt">raco make</span>-generated <span class="stt">".dep"</span> file use
+collection-relative paths whenever possible, and it should always be
+possible for dependencies within a collection. Similarly,
+cross-reference information for documentation uses collection-relative
+paths when possible.</p><p>In a <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=collects.html%23%2528tech._collection._links._file%2529&amp;version=7.0.0.18" class="techoutside Sq" data-pltdoc="x"><span class="techinside">collection links file</span></a>, paths are relative
+to the link file&rsquo;s directory. Installation-wide links then work when
+an in-place installation is moved.</p><p>In cross-reference information for documentation that
+installation-wide, paths can be stored relative to the installation&rsquo;s
+<span class="stt">"doc"</span> directory. For documentation that is built in user
+scope, cross-reference information within the built document is
+recorded relative to the document&rsquo;s directory via the
+<span class="RktSym">root-path</span> initialization argument to <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=renderer.html%23%2528def._%2528%2528lib._scribble%252Fbase-render..rkt%2529._render%7E25%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">render%</a></span>; the
+cross-reference information can be unpacked to a different
+destination, where the use-time path is provided the <span class="RktPn">#:root</span>
+argument to <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=xref.html%23%2528def._%2528%2528lib._scribble%252Fxref..rkt%2529._load-xref%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">load-xref</a></span> and/or <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=xref.html%23%2528def._%2528%2528lib._scribble%252Fxref..rkt%2529._make-data%252Broot%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">make-data+root</a></span>
+structures.</p><h4 x-source-module="(lib &quot;pkg/scribblings/pkg.scrbl&quot;)" x-source-pkg="racket-doc" x-part-tag="&quot;Separate_Documentation_Rendering&quot;">12.2<tt>&nbsp;</tt><a name="(part._.Separate_.Documentation_.Rendering)"></a>Separate Documentation Rendering</h4><p>Unlike module references, which must create no reference cycles,
+documentation can have reference cycles. Documentation also tends to
+be less compact than code, and while we attempt to minimize module
+dependencies in code, documentation should freely reference any other
+documentation that is relevant. Finally, documentation references are
+less static than module references; for example, a document references
+<span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=pairs.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._cons%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">cons</a></span> by referring to <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=index.html&amp;version=7.0.0.18" class="RktModLink Sq" data-pltdoc="x"><span class="RktSym">racket/base</span></a>, and the
+documentation system must figure out which other document defines
+<span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=pairs.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._cons%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">cons</a></span>. A naive implementation of documentation rendering would
+load all documents to render any one document, which is prohibitively
+expensive in both time and space.</p><p>Scribble supports separate document rendering by marshaling and
+unmarshaling cross-reference information. The <span class="stt">racket-index</span>
+extension of <span class="stt">raco setup</span> stores a document&rsquo;s information in
+<span class="stt">".sxref"</span> files. Some documents, such as the <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=index.html&amp;version=7.0.0.18" class="Sq" data-pltdoc="x">reference</a>, export a large volume of cross-reference
+information, so <span class="stt">raco setup</span> breaks up a document&rsquo;s exported
+cross-reference information into multiple
+<span class="stt">"out<span class="sroman">&#8249;<span style="font-family: 楷体">n</span>&#8250;</span>.sxref"</span> files. Information about &ldquo;imported&rdquo;
+cross-reference information&#8212;<wbr></wbr>that is, the cross references that were
+used the last time a document was built&#8212;<wbr></wbr>is kept in
+<span class="stt">"in.sxref"</span> files. Finally, to detect which
+<span class="stt">"out<span class="sroman">&#8249;<span style="font-family: 楷体">n</span>&#8250;</span>.sxref"</span> files need to be loaded while building
+a document, a mapping of cross-reference keys to
+<span class="stt">"out<span class="sroman">&#8249;<span style="font-family: 楷体">n</span>&#8250;</span>.sxref"</span> files is kept in a SQLite database,
+<span class="stt">"docindex.sqlite"</span>. Lazy loading of
+<span class="stt">"out<span class="sroman">&#8249;<span style="font-family: 楷体">n</span>&#8250;</span>.sxref"</span> files is implemented though the
+<span class="RktPn">#:demand-source</span> argument to <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=xref.html%23%2528def._%2528%2528lib._scribble%252Fxref..rkt%2529._load-xref%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">load-xref</a></span>, providing a
+function that consults <span class="stt">"docindex.sqlite"</span> to map a key to a
+cross-reference file.</p><p>Various kinds of paths within cross-reference files are stored with
+various relative-path conventions. The <span class="stt">"docindex.sqlite"</span> file
+in an installation can be moved unmodified with the installation. The
+<span class="stt">"docindex.sqlite"</span> file for user-scoped packages is
+non-portable (and outside any package), while the <span class="stt">"in.sxref"</span>
+and <span class="stt">"out<span class="sroman">&#8249;<span style="font-family: 楷体">n</span>&#8250;</span>.sxref"</span> files can be included as-is in a
+<a href="strip.html#%28tech._binary._package%29" class="techoutside" data-pltdoc="x"><span class="techinside">binary package</span></a> or <a href="strip.html#%28tech._built._package%29" class="techoutside" data-pltdoc="x"><span class="techinside">built package</span></a>.</p><h4 x-source-module="(lib &quot;pkg/scribblings/pkg.scrbl&quot;)" x-source-pkg="racket-doc" x-part-tag="&quot;Cross-Document_HTML_References&quot;">12.3<tt>&nbsp;</tt><a name="(part._.Cross-.Document_.H.T.M.L_.References)"></a>Cross-Document HTML References</h4><p>The HTML generated for a Scribble document needs relative
+links. Unlike data that is unmarshaled by Racket code, however, there
+is no way to turn paths that are relative to various installation
+directories into paths that a browser understands&#8212;<wbr></wbr>at least, not
+using only HTML. Generated HTML for documentation therefore relies on
+JavaScript to rewrite certain references, with a fallback path through
+a server to make documentation also work as plain HTML.</p><p>References within a single document are rendered as relative links in
+HTML. A reference from one document to another is rendered as a query
+to, say, <a href="http://docs.racket-lang.org/"><span class="url">http://docs.racket-lang.org/</span></a>. However, every document
+also references <span class="stt">"local-redirect.js"</span> and (in the case of
+documentation for user-specific collections)
+<span class="stt">"local-user-redirect.js"</span>. Those fragments of JavaScript
+dynamically rewrite query references to direct filesystem
+references&#8212;<wbr></wbr>to installation-wide and user-specific targets,
+respectively&#8212;<wbr></wbr>when local targets are available. When local targets
+are not available, the query link is left unmodified to go through a
+server.</p><p>The <span class="stt">"local-redirect.js"</span> and <span class="stt">"local-user-redirect.js"</span>
+files map documentation-directory names to specific paths. Most query
+references contain a documentation-directory name and a relative path
+within the directory, in which case the mapping from directory names
+to paths is sufficient. Indirect links, such as those created by
+<span class="RktPn">(</span><span class="RktSym">seclink</span><span class="stt"> </span><span class="RktPn">#:indirect?</span><span class="stt"> </span><span class="RktVal">#t</span><span class="stt"> </span><span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=reference&amp;rel=stx-patterns.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fstxcase-scheme..rkt%2529._......%2529%2529&amp;version=7.0.0.18" class="RktStxLink Sq" data-pltdoc="x">...</a></span><span class="RktPn">)</span>, embed a cross-reference key,
+and so <span class="stt">"local-redirect.js"</span> and
+<span class="stt">"local-user-redirect.js"</span> must also embed a part of the
+cross-reference database. (This copy of the database is broken into
+multiple files, each of which is loaded on demand.) The
+<span class="stt">"local-redirect.js"</span> and <span class="stt">"local-user-redirect.js"</span>
+files are generated as part of the special <span class="stt">"local-redirect"</span>
+document that is implemented by the <span class="stt">racket-index</span> package.</p><p>The indirection through <span class="stt">"local-redirect.js"</span> and
+<span class="stt">"local-user-redirect.js"</span> reduces the problem of relative
+links to the problem of referencing those two files. They are
+referenced as absolute paths in a user-specific document build. To
+create a <a href="strip.html#%28tech._built._package%29" class="techoutside" data-pltdoc="x"><span class="techinside">built package</span></a> or <a href="strip.html#%28tech._binary._package%29" class="techoutside" data-pltdoc="x"><span class="techinside">binary package</span></a> that includes
+documentation, each <span class="stt">".html"</span> file must be modified to remove
+the absolute paths, and then each <span class="stt">".html"</span> file must be
+modified again on installation to put the target installation&rsquo;s paths
+in path.</p><p>The <span class="stt">racket-index</span> package&rsquo;s extension of <span class="stt">raco setup</span> to
+build Scribble documentation puts these indirections in place using
+the <span class="RktSym">set-external-tag-path</span> method of <span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=renderer.html%23%2528def._%2528%2528lib._scribble%252Fhtml-render..rkt%2529._render-mixin%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">render-mixin</a></span>
+from <a href="http://docs.racket-lang.org/local-redirect/index.html?doc=scribble&amp;rel=renderer.html%23%2528mod-path._scribble%252Fhtml-render%2529&amp;version=7.0.0.18" class="RktModLink Sq" data-pltdoc="x"><span class="RktSym">scribble/html-render</span></a>. The
+<a href="http://docs.racket-lang.org/"><span class="url">http://docs.racket-lang.org/</span></a> path is not hardwired, but
+instead based on the installation&rsquo;s configuration as reported by
+<span class="RktSym"><a href="http://docs.racket-lang.org/local-redirect/index.html?doc=raco&amp;rel=dirs.html%23%2528def._%2528%2528lib._setup%252Fdirs..rkt%2529._get-doc-search-url%2529%2529&amp;version=7.0.0.18" class="RktValLink Sq" data-pltdoc="x">get-doc-search-url</a></span>. That configuration, in turn, can be
+determined when building a Racket distribution; the main distributions
+from PLT set the URL to a version-specific site, so that searches work
+even after new Racket versions are released, while snapshots similarly
+set the URL to a snapshot-specific site.</p><h4 x-source-module="(lib &quot;pkg/scribblings/pkg.scrbl&quot;)" x-source-pkg="racket-doc" x-part-tag="&quot;HTML_Documentation_Searching_and_Start_Page&quot;">12.4<tt>&nbsp;</tt><a name="(part._.H.T.M.L_.Documentation_.Searching_and_.Start_.Page)"></a>HTML Documentation Searching and Start Page</h4><p>The <span class="stt">racket-index</span> package provides a special document to
+implement the initial page for installed HTML documentation. The
+document uses <span class="stt">"info.rkt"</span>-file <span class="RktSym">scribblings</span> flags to
+depend on all documents for their titles.</p><p>The <span class="stt">racket-index</span> package also provides a special document to
+implement searching. The search document uses JavaScript and a copy of
+the cross-reference database (similar to <span class="stt">"local-redirect.js"</span>)
+to implement interactive searching.</p><p>If any user-specific collections have been installed, then
+<span class="stt">racket-index</span> generates two copies of the start and search
+documents: one for the installation, and one specific to the user. The
+user pages are an extension of the installation pages. The
+user-specific search page reads the installation-wide search page&rsquo;s
+database, which both avoids duplication and allows the search to pick
+up any additions to the installation without requiring a rebuild of
+the user-specific search page. The user-specific start page, in
+contrast, must be rebuilt after any installation-wide additions to
+pick up the additions.</p><p>When DrRacket or <span class="stt">raco docs</span> opens documentation in a browser, it
+opens the user-specific start or search page, if it exists. If those
+pages are visited for any reason, browser local storage or (if local
+storage is not supported) a cookie is installed. The local-storage key
+or cookie is named &ldquo;PLT_Root.<span class="sroman">&#8249;<span style="font-family: 楷体">version</span>&#8250;</span>,&rdquo; it points to the
+location of the user-specific documentation. Thereafter, using the
+local value of cookie, searching in any documentation page or going to
+the &ldquo;top&rdquo; page goes to the user-specific page, even from an
+installation-wide page.</p><div class="navsetbottom"><span class="navleft"><form class="searchform"><input class="searchbox" style="color: #888;" type="text" value="…搜索手册…" title="输入搜索字符串以搜索手册" onkeypress="return DoSearchKey(event, this, &quot;7.0.0.18&quot;, &quot;../&quot;);" onfocus="this.style.color=&quot;black&quot;; this.style.textAlign=&quot;left&quot;; if (this.value == &quot;…搜索手册…&quot;) this.value=&quot;&quot;;" onblur="if (this.value.match(/^ *$/)) { this.style.color=&quot;#888&quot;; this.style.textAlign=&quot;center&quot;; this.value=&quot;…搜索手册…&quot;; }"/></form>&nbsp;&nbsp;<a href="../index.html" title="上至文档的顶层" data-pltdoc="x" onclick="return GotoPLTRoot(&quot;7.0.0.18&quot;);">&#39030;&#23618;</a></span><span class="navright">&nbsp;&nbsp;<a href="Future_Plans.html" title="后退至&quot;11 Future Plans&quot;" data-pltdoc="x">&larr; &#21069;&#19968;&#39029;</a>&nbsp;&nbsp;<a href="index.html" title="上至&quot;Package Management in Racket&quot;" data-pltdoc="x">&#19978;&#19968;&#23618;</a>&nbsp;&nbsp;<span class="nonavigation">&#21518;&#19968;&#39029; &rarr;</span></span>&nbsp;</div></div></div><div id="contextindicator">&nbsp;</div></body></html>
